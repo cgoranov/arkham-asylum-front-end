@@ -1,19 +1,13 @@
 import './App.css';
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-function App(props) {
+function App() {
+  const test = useSelector(state => state)
   return (
     <div className="App">
-        <h1>{props.test}</h1>
+        <h1>{test}</h1>
     </div>
   );
 }
 
-
-function mapStateToProps(state){
-  return {
-    test: state
-  }
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
