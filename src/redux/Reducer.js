@@ -1,11 +1,11 @@
-
+import { SET_CHARACTERS } from "../actions/actionTypes";
 const initialState = { characters: [] }
 
 function reducer(state = initialState, action) {
     
     switch (action.type) {
-        case "SHOW_CHARACTERS":
-            return state
+        case SET_CHARACTERS:
+            return {...state, characters: [...state.characters]}
         default:
             return state
     }
