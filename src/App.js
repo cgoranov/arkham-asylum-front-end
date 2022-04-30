@@ -1,14 +1,19 @@
 import './App.css';
+import { connect } from 'react-redux'
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <h1>Test</h1>
-      <ul>
-        
-      </ul>
+        <h1>{props.test}</h1>
     </div>
   );
 }
 
-export default App;
+
+function mapStateToProps(state){
+  return {
+    test: state
+  }
+}
+
+export default connect(mapStateToProps)(App);

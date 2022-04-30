@@ -1,5 +1,5 @@
 
-const initialState = ["test", "test1", "test2"]
+const initialState = "Che"
 
 function reducer(state = initialState, action) {
 
