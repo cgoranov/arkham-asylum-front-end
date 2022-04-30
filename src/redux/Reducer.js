@@ -5,7 +5,7 @@ function reducer(state = initialState, action) {
     
     switch (action.type) {
         case SET_CHARACTERS:
-            return {...state, characters: [...state.characters]}
+            return { characters: action.payload }
         default:
             return state
     }
