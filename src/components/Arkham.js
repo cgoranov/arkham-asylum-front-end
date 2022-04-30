@@ -1,12 +1,21 @@
 
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { fetchCharacters } from '../actions/actionTypes'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchCharacters } from '../actions/actions'
 
 function Arkham() {
    const dispatch = useDispatch()
+   const characters = useSelector(state => state.characters)
+   
+   useEffect(() => {
+      dispatch(fetchCharacters())
+   })
 
-   return  "Arkham map"
+   return (
+      <div>
+         {characters.map(c => <p> {c.name}  </p>)}
+      </div>
+   )
 }
 
 export default Arkham
