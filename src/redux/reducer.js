@@ -1,5 +1,7 @@
 
-function reducer(state, action) {
+const initialState = []
+
+function reducer(state = initialState, action) {
 
     return state
 }
