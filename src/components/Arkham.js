@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchCharacters } from '../actions/actions'
 import Batman from './characters/Batman'
+import Villains from './characters/Villains'
 
 function Arkham() {
    const dispatch = useDispatch()
@@ -12,12 +13,12 @@ function Arkham() {
       dispatch(fetchCharacters())
    })
 
-   assignComponents(characters) {
-      characters.map(c => {
-         if (c.name == "Batman") {
+   function assignComponents(characters) {
+      return characters.map(c => {
+         if (c.name === "Batman") {
             return <Batman />
          } else {
-            return <Villain villain={c} />
+            return <Villains villain={c} />
          }
       })
    }
