@@ -2,18 +2,29 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchCharacters } from '../actions/actions'
+import Batman from './characters/Batman'
 
 function Arkham() {
    const dispatch = useDispatch()
    const characters = useSelector(state => state.characters)
    
    useEffect(() => {
-      dispatch(fetchCharacters(), [])
+      dispatch(fetchCharacters())
    })
+
+   assignComponents(characters) {
+      characters.map(c => {
+         if (c.name == "Batman") {
+            return <Batman />
+         } else {
+            return <Villain villain={c} />
+         }
+      })
+   }
 
    return (
       <div>
-         {characters.map(c => <p key={c.id}> {c.name}  </p>)}
+         {assignComponents(characters)}
       </div>
    )
 }

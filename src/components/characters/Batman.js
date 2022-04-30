@@ -1,4 +1,9 @@
 function Batman(){
+    return (
+        <div className="Batman">
+            <p> "The Batman" </p>
+        </div>
+    )
 
 }
 
