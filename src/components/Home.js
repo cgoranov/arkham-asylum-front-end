@@ -1,5 +1,9 @@
+
+
 function Home(){
-    "Home Page"
+    return (
+        "Home Page"
+    )
 }
 
 export default Home
