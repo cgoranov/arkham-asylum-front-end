@@ -5,7 +5,7 @@ function reducer(state = initialState, action) {
     
     switch (action.type) {
         case "SHOW_CHARACTERS":
-            return [...state]
+            return state
         default:
             return state
     }
