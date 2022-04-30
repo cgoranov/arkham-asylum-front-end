@@ -1,5 +1,5 @@
 function Arkham() {
-    "Arkham map"
+   return  "Arkham map"
 }
 
 export default Arkham

@@ -1,5 +1,5 @@
 function MostWanted(){
-    "Most Wanted page"
+    return "Most Wanted page"
 }
 
 export default MostWanted
