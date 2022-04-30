@@ -8,12 +8,12 @@ function Arkham() {
    const characters = useSelector(state => state.characters)
    
    useEffect(() => {
-      dispatch(fetchCharacters())
+      dispatch(fetchCharacters(), [])
    })
 
    return (
       <div>
-         {characters.map(c => <p> {c.name}  </p>)}
+         {characters.map(c => <p key={c.id}> {c.name}  </p>)}
       </div>
    )
 }
