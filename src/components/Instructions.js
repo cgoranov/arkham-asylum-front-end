@@ -1,5 +1,5 @@
 function Instructions(){
-    "Instructions"
+    return "Instructions"
 }
 
 export default Instructions
