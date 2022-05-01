@@ -5,6 +5,12 @@ p.homeintroduction {
  
 }
 
+.MostWantedContainer {
+  padding-left: 500px;
+  padding-right: 500px;
+  background-image: url('../public/villain_icons/mostwanted.jpg');
+}
+
 h2 {
   padding-left: 100px;
   padding-right: 100px;

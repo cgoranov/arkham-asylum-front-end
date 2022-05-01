@@ -17,7 +17,7 @@ function MostWanted(){
      }
       
     return (
-        <div className="mostWantedForm">
+        <div className="MostWantedContainer">
             <MostWantedForm />
             {assignComponents(characters)}
         </div>
