@@ -54,7 +54,7 @@
 }
 
 .villain-text-block {
-  position: absolute;
+  visibility: hidden;
   bottom: 20px;
   right: 20px;
   background-color: black;
