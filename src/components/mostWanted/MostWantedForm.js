@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { createCharacter } from '../../actions/actions'
+import { useDispatch } from 'react-redux'
 
 function MostWantedForm() {
+
+    const dispatch = useDispatch()
 
     const [name, setName] = useState("")
     const [funFact, setFunFact] = useState("")
@@ -16,7 +19,7 @@ function MostWantedForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        createCharacter({name, funFact})
+        dispatch(createCharacter({name, funFact}))
         setName("");
         setFunFact("");
     } 
