@@ -20,14 +20,16 @@ function MostWantedForm() {
     const handleSubmit = (e) => {
         e.preventDefault()
         dispatch(createCharacter({name: name, fun_fact: funFact}))
+        console.log("im here now")
         setName("");
+        console.log(name)
         setFunFact("");
     } 
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="name" onChange={handleNameChange} />
-            <input type="text" placeholder="fun_fact" onChange={handleFunFactChange} />
+            <input type="text" placeholder="name" value={name} onChange={handleNameChange} />
+            <input type="text" placeholder="fun_fact" value={funFact} onChange={handleFunFactChange} />
             <input type="submit" value="Add" />
         </form>
     )
