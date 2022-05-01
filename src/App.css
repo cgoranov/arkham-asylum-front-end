@@ -34,6 +34,17 @@ a:hover {
   margin-right: 300px;
 }
 
+.Instructions {
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
 .Arkham {
   background-image: url('../public/villain_icons/arkham.jpg');
   object-fit:contain;
