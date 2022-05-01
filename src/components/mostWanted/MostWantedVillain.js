@@ -1,6 +1,6 @@
-function MostWantedVillains(props) {
+function MostWantedVillain(props) {
 
  
 }
 
-export default MostWantedVillains;
+export default MostWantedVillain;
