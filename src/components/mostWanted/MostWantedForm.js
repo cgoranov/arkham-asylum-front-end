@@ -7,16 +7,16 @@ function MostWantedForm() {
 
     const handleNameChange = (e) => {
         setName(e.target.value)
-        console.log(name)
     }
 
     const handleFunFactChange = (e) => {
         setFunFact(e.target.value)
-        console.log(funFact)
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setName("");
+        setFunFact("");
     } 
 
     return (
