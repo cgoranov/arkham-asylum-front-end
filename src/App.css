@@ -1,4 +1,7 @@
-
+.Home.Instructions {
+  width: 1500px;
+  height: 5000px;
+}
 .Arkham {
   background-image: url('../public/villain_icons/arkham.jpg');
   object-fit:contain;
@@ -76,6 +79,7 @@
 .App {
   text-align: center;
   background-image: url('../public/villain_icons/forrest.jpg');
+  height: 1000px;
 }
 
 .App-logo {

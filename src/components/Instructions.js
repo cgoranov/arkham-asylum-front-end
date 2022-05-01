@@ -1,6 +1,6 @@
 function Instructions(){
     return (
-        <div>
+        <div className="Instructions">
             <h1>Instructions</h1>
             <h2>You brave soul. I see no fear in your eyes. You are a true Dark Knight fan. Your next steps are below: </h2>
             <ol type="1">
