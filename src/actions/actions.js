@@ -4,12 +4,12 @@ const setCharacters = (characters) => ({type: SET_CHARACTERS, payload: character
 const addCharacter = (character) => ({type: ADD_CHARACTERS, payload: character })
 
 export const fetchCharacters = () => {
-    return dispatch => (
+    return dispatch => {
         fetch("http://localhost:3000/characters")
         .then(r => r.json())
         .then(characters => dispatch(setCharacters(characters)))
         .catch(err => console.error(err))
-    )
+    }
 } 
 
 export const createCharacter = (character) => {
