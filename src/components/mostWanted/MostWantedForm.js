@@ -25,7 +25,7 @@ function MostWantedForm() {
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="name" onChange={handleNameChange} />
             <input type="text" placeholder="fun_fact" onChange={handleFunFactChange} />
-            <input type="submit" />
+            <input type="submit" value="Add" />
         </form>
     )
 
