@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Instructions from './components/Instructions';
 import Arkham from './components/Arkham';
-import MostWanted from './components/MostWanted';
+import MostWanted from './components/mostWanted/MostWanted';
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 
