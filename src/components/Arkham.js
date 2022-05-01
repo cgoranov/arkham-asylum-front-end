@@ -13,7 +13,7 @@ function Arkham() {
    })
 
    function assignComponents(characters) {
-      characters.map(c => {
+      return characters.map(c => {
          let v
          if(c.id < 5) {
             v = <Villains villain={c}/>
