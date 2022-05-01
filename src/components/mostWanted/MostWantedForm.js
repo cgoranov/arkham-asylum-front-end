@@ -19,7 +19,7 @@ function MostWantedForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(createCharacter({name, funFact}))
+        dispatch(createCharacter({name: name, fun_fact: funFact}))
         setName("");
         setFunFact("");
     } 

@@ -14,7 +14,6 @@ export const fetchCharacters = () => {
 
 export const createCharacter = (character) => {
     return dispatch => {
-        console.log("hit dispatch")
         fetch("http://localhost:3000/characters", {
             method: "POST",
             headers: {
