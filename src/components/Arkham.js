@@ -24,7 +24,7 @@ function Arkham() {
    }
 
    return (
-      <div>
+      <div className="Arkham">
          {assignComponents(characters)}
       </div>
    )
