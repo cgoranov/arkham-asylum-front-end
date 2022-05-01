@@ -1,7 +1,7 @@
 
 function Villains(props) {
     return (
-        <div className="villains">
+        <div className={props.villain.name}>
             <p>{props.villain.name}</p>
             <p>{props.villain.fun_fact}</p>
         </div>
