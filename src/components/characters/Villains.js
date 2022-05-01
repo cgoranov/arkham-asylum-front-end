@@ -4,7 +4,6 @@ function Villains(props) {
     const handleClick = (e) => {
         const element = e.target.children[0]
         element.style.visibility='visible'
-        
     }
 
     return (
