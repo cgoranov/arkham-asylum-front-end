@@ -22,13 +22,14 @@ export const createCharacter = (character) => {
             },
             body: JSON.stringify(character)
         })
-        .then(r => {
-            if (r.ok){
-                r.json().then(character => dispatch(addCharacter(character)))
+        .then(r => r.json())
+        .then(data => {
+            if (data.status === 201){
+                dispatch(addCharacter(data.character))
             } else {
-                r.json().then(err => alert(err))
+                alert(data.errors)
             }
         })
-        .catch(err => console.error(err))
+        .catch(err => console.error('Error', err))
     }
 }
