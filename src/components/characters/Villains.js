@@ -1,8 +1,9 @@
 
 function Villains(props) {
     return (
-        <div key={props.villain.id}>
-            <p >{props.villain.name}</p>
+        <div className="villains">
+            <p>{props.villain.name}</p>
+            <p>{props.villain.fun_fact}</p>
         </div>
     )
 }

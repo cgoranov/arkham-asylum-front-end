@@ -1,6 +1,6 @@
-function Batman(){
+function Batman(props){
     return (
-        <div className="Batman">
+        <div className="Batman" key={props.batman.id}>
             <p> "The Batman" </p>
         </div>
     )

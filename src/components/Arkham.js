@@ -16,7 +16,7 @@ function Arkham() {
    function assignComponents(characters) {
       return characters.map(c => {
          if (c.name === "Batman") {
-            return <Batman />
+            return <Batman batman={c}/>
          } else {
             return <Villains villain={c} />
          }
