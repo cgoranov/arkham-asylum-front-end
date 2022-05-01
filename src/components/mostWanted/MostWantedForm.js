@@ -1,4 +1,9 @@
+import { useState } from 'react'
+
 function MostWantedForm() {
+
+    const [name, setName] = useState("")
+    const [funFact, setFunFact] = useState("")
 
     return (
         <form>
