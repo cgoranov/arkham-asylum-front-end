@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createCharacter } from '../../actions/actions'
 
 function MostWantedForm() {
 
@@ -15,6 +16,7 @@ function MostWantedForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        createCharacter({name, funFact})
         setName("");
         setFunFact("");
     } 
