@@ -1,5 +1,12 @@
+import MostWantedForm from "./MostWantedForm"
+
 function MostWanted(){
-    return "Most Wanted page"
+    
+    return (
+        <div className="mostWantedForm">
+            <MostWantedForm />
+        </div>
+    )
 }
 
 export default MostWanted

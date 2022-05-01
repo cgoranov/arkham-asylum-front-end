@@ -14,3 +14,5 @@ function MostWantedForm() {
     )
 
 }
+
+export default MostWantedForm
