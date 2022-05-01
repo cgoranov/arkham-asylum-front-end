@@ -2,9 +2,16 @@ p.homeintroduction {
   padding-left: 100px;
   padding-right: 100px;
   text-align: left;
+ 
 }
 
 h2 {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left;
+}
+
+ol {
   padding-left: 100px;
   padding-right: 100px;
   text-align: left;
@@ -45,6 +52,7 @@ a:hover {
   padding-bottom: 150px;
   margin-left: 300px;
   margin-right: 300px;
+  border: 5px solid white;
 }
 
 .Instructions {
@@ -56,6 +64,8 @@ a:hover {
   padding-bottom: 150px;
   margin-left: 300px;
   margin-right: 300px;
+  border: 5px solid white;
+  
 }
 
 .Arkham {
@@ -64,6 +74,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 5px solid black;
 }
 
 .Joker {
@@ -78,6 +89,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   float:inline-start;
+  border: 5px solid black;
 }
 
 .Riddler {
@@ -92,6 +104,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   float:inline-start;
+  border: 5px solid black;
 }
 
 .Quinn {
@@ -106,6 +119,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   float:inline-start;
+  border: 5px solid black;
 }
 
 .Bane {
@@ -120,6 +134,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   float:inline-start;
+  border: 5px solid black;
 }
 
 .villain-text-block {
