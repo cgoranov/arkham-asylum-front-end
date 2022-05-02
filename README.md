@@ -20,7 +20,7 @@ git clone git@github.com:cgoranov/arkham-asylum-front-end.git
 
 4. Make sure the backend API is cloned, open and the server is running using **rails s**. 
 
-5. In the command-line, type **npm start** to launch application. Seperate broswer window should open. 
+5. In the command-line, type **npm start** to launch application. Separate browser window should open. 
 
 6. Enjoy Dark Knight fans. 
 
