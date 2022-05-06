@@ -9,8 +9,9 @@ function Arkham() {
    const characters = useSelector(state => state.characters)
    
    useEffect(() => {
+      console.log("stringify")
       dispatch(fetchCharacters())
-   })
+   }, [dispatch])
 
    function assignComponents(characters) {
       return characters.map(c => {
