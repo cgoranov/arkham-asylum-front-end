@@ -1,5 +1,5 @@
 import MostWantedForm from "./MostWantedForm"
-import { useSelector,useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import MostWantedVillain from "./MostWantedVillain"
 import { useEffect } from 'react'
 import { fetchCharacters } from '../../actions/actions'
